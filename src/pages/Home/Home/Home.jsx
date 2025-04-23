@@ -4,6 +4,7 @@ import Categories from "../Categories/Categories";
 import Products from "../Products/Products";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import Questions from "../Questions/Questions";
+import Feedbacks from "../Feedbacks/Feedbacks";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
                 <OurServices />
                 <Categories />
                 <Products />
+                <Feedbacks />
                 <Questions />
                 <NewsLetter />
             </div>
