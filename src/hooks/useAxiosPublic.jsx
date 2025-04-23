@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosPublic = axios.create({
-    baseURL: 'https://admin.refabry.com/'
+    baseURL: 'https://admin.refabry.com'
 })
 
 const useAxiosPublic = () => {
