@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 const Footer = () => {
     return (
         <footer className="w-full bg-[#000]">
-            <div className="container py-20 px-4 sm:px-6 lg:px-8 mx-auto text-center">
+            <div className="container py-20 px-6 lg:px-40 mx-auto text-center">
                 {/* logo */}
                 <div>
                     <Link to='/' className="sm:order-1 flex gap-x-1 items-center justify-center dark:text-white focus:outline-none focus:opacity-80">
