@@ -1,11 +1,16 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
+import MainLayout from './layout/MainLayout'
+import Home from './pages/Home/Home/Home'
 
 function App() {
-  return (
-    <>
-      <h1>Zayno e-commerce web application</h1>
-    </>
-  )
+  const router = createBrowserRouter([
+    {path: '/', element: <MainLayout />, children: [
+      {path: '/', element: <Home />}
+    ]}
+  ])
+
+  return <RouterProvider router={router} />
 }
 
 export default App
