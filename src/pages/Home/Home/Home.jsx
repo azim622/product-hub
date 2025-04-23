@@ -1,7 +1,8 @@
-import OurServices from "../../../components/OurServices/OurServices";
+import OurServices from "../OurServices/OurServices";
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
 import Products from "../Products/Products";
+import NewsLetter from "../NewsLetter/NewsLetter";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
                 <OurServices />
                 <Categories />
                 <Products />
+                <NewsLetter />
             </div>
         </section>
     );

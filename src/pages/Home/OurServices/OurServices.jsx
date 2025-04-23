@@ -1,6 +1,6 @@
-import delivery from "../../assets/icons/delivery.png"
-import cure from "../../assets/icons/cube.png"
-import payment from "../../assets/icons/payment.png"
+import delivery from "../../../assets/icons/delivery.png"
+import cure from "../../../assets/icons/cube.png"
+import payment from "../../../assets/icons/payment.png"
 
 const OurServices = () => {
     return (
