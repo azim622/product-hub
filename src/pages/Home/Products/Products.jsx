@@ -22,8 +22,8 @@ const Products = () => {
                 <SectionTitle title={"Everything You Need"} sub_title={"Dive into our full product lineup - quality and variety, guaranteed."} />
 
                 <div className="mb-10 flex gap-5 items-center justify-end">
-                    <button type="button" className="px-5 py-1.5 text-sm text-gray-700 hover:text-white active:text-slate-700 font-medium border border-gray-200 hover:border-gray-300 hover:bg-black active:bg-white outline-none rounded-md hover:shadow-md" onClick={handleSortByPrice}>Sort by price</button>
-                    <Link to="/products"><button type="button" className="px-5 py-1.5 text-sm text-gray-700 hover:text-white active:text-slate-700 font-medium border border-gray-200 hover:border-gray-300 hover:bg-black active:bg-white outline-none rounded-md hover:shadow-md" onClick={handleSortByPrice}>All products</button></Link>
+                    <button type="button" className="px-5 py-1.5 text-sm text-gray-700 hover:text-white active:text-slate-700 font-medium border border-gray-300 hover:border-gray-400 bg-slate-50 hover:bg-black active:bg-white outline-none rounded-md hover:shadow-md" onClick={handleSortByPrice}>Sort by price</button>
+                    <Link to="/products"><button type="button" className="px-5 py-1.5 text-sm text-gray-700 hover:text-white active:text-slate-700 font-medium border border-gray-300 hover:border-gray-400 bg-slate-50 hover:bg-black active:bg-white outline-none rounded-md hover:shadow-md" onClick={handleSortByPrice}>All products</button></Link>
                 </div>
 
                 {
