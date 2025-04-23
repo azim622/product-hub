@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
     const { unique_id, discount_amount, price, name, image } = product;
-    console.log(product);
+    // console.log(product);
 
     return (
         <Link to={`/products/product-details/${unique_id}`}>

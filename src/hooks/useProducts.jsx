@@ -1,16 +1,23 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "./useAxiosPublic";
 
-const useProducts = () => {
+const useProducts = (sortByPrice = false) => {
     const axiosPublic = useAxiosPublic();
 
     const { data: products = [], isPending, isError, error, refetch } = useQuery({
-        queryKey: ["products"],
+        queryKey: ["products", sortByPrice],
         queryFn: async() => {
             try{
                 const res = await axiosPublic.get('/api/all/product/get');
                 const data = await res.data;
-                return data.data || [];
+                let result = data?.data?.data || [];
+
+                // Sort products by price if sortByPrice is true
+                if (sortByPrice) {
+                    result = result.sort((a, b) => a.price - b.price); // Ascending order
+                }
+
+                return result;
             }catch(err){
                 console.error(err);
                 return [];
