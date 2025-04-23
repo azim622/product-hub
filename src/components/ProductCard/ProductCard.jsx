@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
 
     return (
         <Link to={`/products/product-details/${unique_id}`}>
-            <div className="product group p-2 border border-gray-200 hover:border-gray-300 rounded-lg hover:shadow-md">
+            <div className="product group p-2 border border-gray-200 hover:border-gray-300 rounded-lg hover:shadow-lg">
                 <img src={`https://admin.refabry.com/storage/product/${image}`} alt="Product Image" className="w-full h-[155px] rounded-md border border-gray-200" />
 
                 <div className="mt-3">
