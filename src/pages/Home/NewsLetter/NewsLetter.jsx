@@ -1,15 +1,27 @@
 const NewsLetter = () => {
     return (
-        <section className="newsLetter w-full py-10 bg-[#000] text-[#fff] rounded-xl">
-            <div className="container mx-auto px-2 md:px-6 flex gap-y-5 md:gap-y-0 justify-between flex-col md:flex-row">
-                <div>
-                    <h1 className="text-2xl font-medium">Join Our NewsLetter</h1>
-                    <p className="text-gray-400 text-sm">Get update from us weekly</p>
+        <section className="newsLetter w-full py-12 bg-white text-gray-800 rounded-xl shadow-md">
+            <div className="container mx-auto px-4 md:px-8 flex gap-y-6 md:gap-y-0 justify-between items-center flex-col md:flex-row">
+                <div className="text-center md:text-left">
+                    <h1 className="text-3xl font-semibold mb-2">Join Our Newsletter</h1>
+                    <p className="text-gray-500 text-sm">Stay updated with our latest news and offers.</p>
                 </div>
 
-                <div className="flex items-center">
-                    <input type="email" name="email" id="email" autoComplete="off" placeholder="Email Address" className="px-3 py-1.5 outline-none border border-gray-200 focus:border-gray-300 rounded-md rounded-e-none" />
-                    <button type="button" className="px-5 py-1.5 outline-none border border-gray-200 rounded-md rounded-s-none hover:text-[#000] hover:bg-[#fff] active:text-[#fff] active:bg-[#000]">Subscribe</button>
+                <div className="flex w-full md:w-auto items-center border border-gray-300 rounded-md overflow-hidden">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        autoComplete="off" 
+                        placeholder="Enter your email" 
+                        className="flex-grow px-4 py-2 text-gray-700 outline-none" 
+                    />
+                    <button 
+                        type="button" 
+                        className="bg-blue-600 text-white px-5 py-2 hover:bg-blue-700 transition-all"
+                    >
+                        Subscribe
+                    </button>
                 </div>
             </div>
         </section>
