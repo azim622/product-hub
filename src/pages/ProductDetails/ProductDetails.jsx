@@ -8,7 +8,7 @@ const ProductDetails = () => {
     const { unique_id, name, short_desc, image, stock, price, buying_price, discount_amount, discount_date, updated_at, category } = product;
 
     const { id } = useParams();
-    console.log('Product id:', id);
+    // console.log('Product id:', id);
 
     useEffect(() => {
         const fetchProduct = async() => {
@@ -25,7 +25,7 @@ const ProductDetails = () => {
         fetchProduct();
     }, [products, id]);
 
-    console.log(product)
+    // console.log(product)
 
     return (
         <section className="product-deatails">
