@@ -18,7 +18,7 @@ const Products = () => {
     return (
         <section className="w-full bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                
+
                 {/* Section Title */}
                 <SectionTitle 
                     title="Everything You Need" 
@@ -42,9 +42,15 @@ const Products = () => {
                     <ErrorMessage errMsg={error?.message} />
                 ) : (
                     <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
-                        {products?.map((product) => (
-                            <ProductCard key={product?.unique_id} product={product} />
-                        ))}
+                        {Array.isArray(products) && products.length > 0 ? (
+                            products.map((product) => (
+                                <ProductCard key={product?.unique_id} product={product} />
+                            ))
+                        ) : (
+                            <p className="text-center col-span-full text-gray-500 text-lg">
+                                No products found.
+                            </p>
+                        )}
                     </div>
                 )}
 

@@ -40,56 +40,56 @@ const ProductDetails = () => {
                 <div className="w-full md:w-1/2 flex flex-col gap-5">
                     
                     {/* Category */}
-                    {category?.name && (
+                    {/* {category?.name && ( */}
                         <p className="text-xs bg-sky-50 text-sky-700 border border-sky-200 rounded-full px-4 py-1 w-fit">
-                            {category?.name}
+                            {category?.name ? category?.name : "not found"}
                         </p>
-                    )}
+                    {/* )} */}
 
                     {/* Name and Price */}
                     <div>
-                        <h1 className="text-2xl font-semibold text-slate-800 mb-2">{name}</h1>
+                        <h1 className="text-2xl font-semibold text-slate-800 mb-2">{name?name : "not found"}</h1>
                         
                         <div className="flex items-center gap-3">
-                            <p className="text-xl font-bold text-orange-600">${price}</p>
+                            <p className="text-xl font-bold text-orange-600">${price ?price: "not found"}</p>
                             {buying_price && (
-                                <p className="text-sm line-through text-gray-400">${buying_price}</p>
+                                <p className="text-sm line-through text-gray-400">${buying_price? buying_price: "not found"}</p>
                             )}
-                            {discount_amount && (
+                            {/* {discount_amount && ( */}
                                 <span className="text-sm bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full">
-                                    {discount_amount}% OFF
+                                    {discount_amount ? discount_amount : "not found"}% OFF
                                 </span>
-                            )}
+                            {/* )} */}
                         </div>
                     </div>
 
                     {/* Stock */}
-                    <div>
+                    {/* <div>
                         <p className={`text-sm font-medium ${stock > 0 ? "text-green-600" : "text-red-500"}`}>
                             {stock > 0 ? `In Stock (${stock})` : "Out of Stock"}
                         </p>
-                    </div>
+                    </div> */}
 
                     {/* Short Description */}
-                    {short_desc && (
+                    {/* {short_desc && ( */}
                         <p className="text-base text-gray-600 mt-2">
-                            {short_desc}
+                            {short_desc? short_desc : "not found"}
                         </p>
-                    )}
+                    {/* )} */}
 
                     {/* Discount Validity */}
-                    {discount_date && (
+                    {/* {discount_date && ( */}
                         <p className="text-xs text-gray-400">
-                            Discount valid until: <span className="font-medium">{discount_date}</span>
+                            Discount valid until: <span className="font-medium">{discount_date? discount_amount : "not found"}</span>
                         </p>
-                    )}
+                    {/* )} */}
 
                     {/* Last Updated */}
-                    {updated_at && (
+                    {/* {updated_at && ( */}
                         <p className="text-xs text-gray-400">
-                            Last updated: <span className="font-medium">{updated_at}</span>
+                            Last updated: <span className="font-medium">{updated_at ? updated_at: "not found"}</span>
                         </p>
-                    )}
+                    {/* )} */}
                     
                 </div>
             </div>
