@@ -91,9 +91,6 @@ const ProductDetails = () => {
                         </p>
                     )}
                     
-                    {/* Add to Cart Button */}
-                  
-
                 </div>
             </div>
         </section>
