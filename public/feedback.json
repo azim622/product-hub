@@ -1,20 +1,20 @@
 [
     {
         "_id": "1",
-        "username": "John Doe",
-        "email": "johndoe@example.com",
+        "username": "Jamal Karim",
+        "email": "jamalkarim@example.com",
         "image": "https://rukminim3.flixcart.com/image/850/1000/klicfww0/poster/i/p/7/medium-wall-decor-3d-psoter-for-doraemon-nobita-cartoon-funny-original-imagym48nrgmyrhx.jpeg?q=90&crop=false",
         "rating": 4.5,
-        "comment": "Your AgroSphere website is a promising digital platform for farmers, offering essential features like a Market Price Tracker, a trainer map section, and video training resources. The use of React with TanStack Query ensures efficient data fetching, while MongoDB without Mongoose keeps the backend lightweight. Your team collaboration workflow with separate branches and pull requests maintains code stability.",
+        "comment": "Absolutely love the quality! The fabric feels amazing and the delivery was quicker than I expected. Will definitely shop again!",
         "date": "22-02-2025"
     },
     {
         "_id": "2",
-        "username": "John Doee",
-        "email": "johndoe@examplee.com",
+        "username": "Abrar Hossein",
+        "email": "Abrar@examplee.com",
         "image": "https://rukminim3.flixcart.com/image/850/1000/klicfww0/poster/i/p/7/medium-wall-decor-3d-psoter-for-doraemon-nobita-cartoon-funny-original-imagym48nrgmyrhx.jpeg?q=90&crop=false",
         "rating": 4.5,
-        "comment": "Your AgroSphere website is a promising digital platform for farmers, offering essential features like a Market Price Tracker, a trainer map section, and video training resources. The use of React with TanStack Query ensures efficient data fetching, while MongoDB without Mongoose keeps the backend lightweight. Your team collaboration workflow with separate branches and pull requests maintains code stability.",
+        "comment": "Great service and beautiful designs. I got so many compliments wearing your clothes. Thank you for making it so easy!",
         "date": "22-02-2025"
     },
     {
@@ -23,7 +23,7 @@
         "email": "johndoe@exampleee.com",
         "image": "https://rukminim3.flixcart.com/image/850/1000/klicfww0/poster/i/p/7/medium-wall-decor-3d-psoter-for-doraemon-nobita-cartoon-funny-original-imagym48nrgmyrhx.jpeg?q=90&crop=false",
         "rating": 4.5,
-        "comment": "Your AgroSphere website is a promising digital platform for farmers, offering essential features like a Market Price Tracker, a trainer map section, and video training resources. The use of React with TanStack Query ensures efficient data fetching, while MongoDB without Mongoose keeps the backend lightweight. Your team collaboration workflow with separate branches and pull requests maintains code stability.",
+        "comment": "Smooth checkout, fast delivery, and the clothes fit perfectly! Couldn’t be happier with my purchase.",
         "date": "22-02-2025"
     }
 ]

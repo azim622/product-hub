@@ -33,19 +33,7 @@ const Banner = () => {
                 </Swiper>
 
 
-                <Swiper onSwiper={setThumbsSwiper} loop={true} spaceBetween={10} breakpoints={{
-                    0: { slidesPerView: 2 }, // Tailwind 'xs'
-                    640: { slidesPerView: 3 }, // Tailwind 'sm'
-                    768: { slidesPerView: 3 }, // Tailwind 'md'
-                    1024: { slidesPerView: 4 }, // Tailwind 'lg'
-                    1280: { slidesPerView: 5 }, // Tailwind 'xl'
-                }} freeMode={true} watchSlidesProgress={true} modules={[FreeMode, Navigation, Thumbs]} className="mySwiper rounded-lg h-[50px] md:h-[70px]">
-                    <SwiperSlide><img className='w-full h-full rounded-md' src={banner_02} /></SwiperSlide>
-                    <SwiperSlide><img className='w-full h-full rounded-md' src={banner_03} /></SwiperSlide>
-                    <SwiperSlide><img className='w-full h-full rounded-md' src={banner_01} /></SwiperSlide>
-                    <SwiperSlide><img className='w-full h-full rounded-md' src={banner_04} /></SwiperSlide>
-                    <SwiperSlide><img className='w-full h-full rounded-md' src={banner_05} /></SwiperSlide>
-                </Swiper>
+                
             </div>
         </>
     );

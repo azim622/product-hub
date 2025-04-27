@@ -44,7 +44,7 @@ const Feedbacks = () => {
                 <div ref={sliderRef} className="glide-04 relative w-full">
                     {/*    <!-- Controls --> */}
                     <div className="grid grid-cols-6 mb-10">
-                        <h1 className="col-span-4 text-[1.6rem] md:text-[2rem] text-slate-700">Hear it from other not just us!</h1>
+                        <h1 className="col-span-4 text-[1.6rem] md:text-[2rem] text-slate-700">What Our Happy Users Are Saying About Us</h1>
 
                         {/* left & right buttons */}
                         <div className="col-span-2 flex w-full items-center justify-center gap-2 p-4" data-glide-el="controls">

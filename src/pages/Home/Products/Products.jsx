@@ -8,36 +8,57 @@ import { Link } from "react-router-dom";
 
 const Products = () => {
     const [sortByPrice, setSortByPrice] = useState(false);
-    const [ products, isPending, isError, error ] = useProducts(sortByPrice);
-    // console.log(products);
+    const [products, isPending, isError, error] = useProducts(sortByPrice);
 
     // handleSortByPrice
-    const handleSortByPrice = async() => {
+    const handleSortByPrice = () => {
         setSortByPrice((prev) => !prev);
-    }
+    };
 
     return (
-        <section className="products w-full">
-            <div className="products-inner py-14">
-                <SectionTitle title={"Everything You Need"} sub_title={"Dive into our full product lineup - quality and variety, guaranteed."} />
+        <section className="w-full bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                
+                {/* Section Title */}
+                <SectionTitle 
+                    title="Everything You Need" 
+                    sub_title="Dive into our full product lineup - quality and variety, guaranteed." 
+                />
 
-                <div className="mb-10 flex gap-5 items-center justify-end">
-                    <button type="button" className="px-5 py-1.5 text-sm text-gray-700 hover:text-white active:text-slate-700 font-medium border border-gray-300 hover:border-gray-400 bg-slate-50 hover:bg-black active:bg-white outline-none rounded-md hover:shadow-md" onClick={handleSortByPrice}>Sort by price</button>
-                    <Link to="/products"><button type="button" className="px-5 py-1.5 text-sm text-gray-700 hover:text-white active:text-slate-700 font-medium border border-gray-300 hover:border-gray-400 bg-slate-50 hover:bg-black active:bg-white outline-none rounded-md hover:shadow-md" onClick={handleSortByPrice}>All products</button></Link>
+                {/* Sort Button */}
+                <div className="flex justify-end mt-8 mb-12">
+                    <button
+                        onClick={handleSortByPrice}
+                        className="px-6 py-2 text-sm font-semibold text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-orange-600 hover:text-white transition duration-200 shadow-sm"
+                    >
+                        {sortByPrice ? "Clear Sort" : "Sort by Price"}
+                    </button>
                 </div>
 
-                {
-                    isPending ? (
-                        <Spinner />
-                    ) : isError ? (
-                        <ErrorMessage errMsg={error?.message} />
-                    ) : 
-                    <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
-                        {
-                            products?.map(product => <ProductCard key={product?.unique_id} product={product} />)
-                        }
+                {/* Product Grid */}
+                {isPending ? (
+                    <Spinner />
+                ) : isError ? (
+                    <ErrorMessage errMsg={error?.message} />
+                ) : (
+                    <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+                        {products?.map((product) => (
+                            <ProductCard key={product?.unique_id} product={product} />
+                        ))}
                     </div>
-                }
+                )}
+
+                {/* All Products Button */}
+                <div className="flex justify-center mt-12">
+                    <Link to="/products">
+                        <button
+                            type="button"
+                            className="px-8 py-2 text-sm font-semibold text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-orange-600 hover:text-white transition duration-200 shadow-md"
+                        >
+                            See All Products
+                        </button>
+                    </Link>
+                </div>
             </div>
         </section>
     );

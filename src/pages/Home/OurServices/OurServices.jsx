@@ -4,34 +4,36 @@ import payment from "../../../assets/icons/payment.png"
 
 const OurServices = () => {
     return (
-        <section className="section w-full">
-            <div className="section-inner container mx-auto px-6 lg:px-40 pt-20 pb-14 grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-                <div className="card py-3 px-3 border border-gray-200 rounded-md flex gap-2 justify-start">
-                    <img src={delivery} alt="Fast delivery image" className="w-10 h-10 p-2 rounded-md bg-sky-50" />
-
+        <section className="section w-full bg-gray-50">
+            <div className="container mx-auto px-6 lg:px-32 py-16 grid gap-8 grid-cols-1 md:grid-cols-3">
+                
+                {/* Free Shipping */}
+                <div className="card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+                    <img src={delivery} alt="Free Shipping Icon" className="w-12 h-12 p-2 bg-pink-100 rounded-full" />
                     <div>
-                        <h1 className="text-sm text-slate-800 font-medium">Fast delivery</h1>
-                        <p className="text-xs text-gray-600 mt-1">Quick and timely shipping</p>
+                        <h2 className="text-lg font-semibold text-gray-800">Free Shipping</h2>
+                        <p className="text-sm text-gray-600 mt-1">On all orders over $50, fast & secure delivery.</p>
                     </div>
                 </div>
 
-                <div className="card py-2 px-2 border border-gray-200 rounded-md flex gap-2 justify-start">
-                    <img src={payment} alt="Secure payment image" className="w-10 h-10 p-2 rounded-md bg-sky-50" />
-
+                {/* Premium Quality */}
+                <div className="card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+                    <img src={cure} alt="Premium Quality Icon" className="w-12 h-12 p-2 bg-pink-100 rounded-full" />
                     <div>
-                        <h1 className="text-sm text-slate-800 font-medium">Secure payment</h1>
-                        <p className="text-xs text-gray-600 mt-1">Safe and encrypted checkout</p>
+                        <h2 className="text-lg font-semibold text-gray-800">Premium Quality</h2>
+                        <p className="text-sm text-gray-600 mt-1">Handpicked fabrics crafted for comfort and style.</p>
                     </div>
                 </div>
 
-                <div className="card py-2 px-2 border border-gray-200 rounded-md flex gap-2 justify-start">
-                    <img src={cure} alt="Fast delivery image" className="w-10 h-10 p-2 rounded-md bg-sky-50" />
-
+                {/* 24/7 Support */}
+                <div className="card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+                    <img src={payment} alt="24/7 Support Icon" className="w-12 h-12 p-2 bg-pink-100 rounded-full" />
                     <div>
-                        <h1 className="text-sm text-slate-800 font-medium">30 day return</h1>
-                        <p className="text-xs text-gray-600 mt-1">Easy returns within 30 day</p>
+                        <h2 className="text-lg font-semibold text-gray-800">24/7 Support</h2>
+                        <p className="text-sm text-gray-600 mt-1">Our team is here to assist you anytime.</p>
                     </div>
                 </div>
+
             </div>
         </section>
     );
